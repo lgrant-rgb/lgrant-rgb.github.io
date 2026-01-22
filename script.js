@@ -1,19 +1,9 @@
-const tabs = ["homepage"];
+const tabs = ["homepage.html"];
 render(tabs[0]);
-//document.getElementById("page").src = "./homepage.html";
-
-function exists(url)
-{
-  var http = new XMLHttpRequest();
-  http.open('HEAD', url, false);
-  http.send();
-  return http.status!=404;
-}
-
 
 function render(page) {
-  if (exists("./"+page+".html")) {
-    document.getElementById("page").src = "./"+page+".html";
+  if (page.endsWith(".html")) {
+    document.getElementById("page").src = "./"+page;
   }
   document.getElementById("page").src = "https://"+page;
 }
