@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>new tab</title>
+    <style>
+      body {
+        padding: 0px;
+        margin: 0px;
+        background-color: #000000;
+        font-family: sans-serif;
+      }
+      .title {
+        color: #FFFFFF;
+        position: fixed;
+        left: 50%;
+        top: 30vh;
+        transform: translate(-50%, -50%);
+        font-size: clamp(20px,3vw,30px);
+      }
+      .search {
+        position: absolute;
+        left: 25vw;
+        top: 40vh;
+        width: 50vw;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        border: 1px solid #ddd;
+        border-radius: 25px;
+        background-color: #FFFFFF;
+        padding: 2px 5px;
+        box-sizing: border-box;
+      }
+      .searchBar {
+        flex: 1;
+        border: none;
+        outline: none;
+        width: 45vw;
+        height: 0px;
+        font-size: 10px;
+        padding: 5px 5px;
+        border-radius: 25px;
+        background-color: transparent;
+      }
+      .searchButton {
+        font-size: 10px;
+        border-width: 0px;
+        background-color: transparent;
+        width: 20px;
+        height: 20px;
+        padding: 0px;
+        margin: 0px;
+      }
+      /* .searchBar {
+        position: absolute;
+        left: 25vw;
+        top: 40vh;
+        width: 50vw;
+        height: 20px;
+        border: 0px;
+        border-radius: 25px;
+        box-sizing:border-box;
+        border: 1px solid #ddd;
+      }
+      .searchButton {
+        font-size: 10px;
+        border-radius: 25px;
+        border-width: 0px;
+        background-color: #FFFFFF;
+        position: absolute;
+        left: 73vw;
+        top: 40vh;
+        width: 20px;
+        height: 20px;
+        padding: 0px;
+        margin: 0px;
+      }
+      {
+      border: none;
+      background: none;
+      cursor: pointer;
+      font-size: 10px;
+      border-radius: 50%;
+      transition: background 0.2s;
+      }*/
+    </style>
+  </head>
+  <body>
+      <h1 class=title>homepage search</h1>
+      <form class=search action="https://bing.com/search" method="get" accept-charset="utf-8">
+        <input type=text name=q id=searchBar class=searchBar placeholder="search bing..." required>
+        <button type=submit id=searchButton class=searchButton onclick="window.location.href='https://bing.com/search?q='+document.getElementById('search').value">⌕</button>
+      </form>
+      <!--<script>
+        function enter() {
+          
+        }
+
+        document.getElementById("searchButton").onclick = "enter()";
+      </script>-->
+  </body>
+</html>
