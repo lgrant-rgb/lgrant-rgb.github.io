@@ -1,5 +1,6 @@
 const tabs = ["home"];
-document.getElementById("page").src = "./homepage.html";
+render(tabs[0]);
+//document.getElementById("page").src = "./homepage.html";
 
 function exists(url)
 {
