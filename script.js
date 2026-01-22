@@ -1,4 +1,4 @@
-const tabs = ["home"];
+const tabs = ["homepage"];
 render(tabs[0]);
 //document.getElementById("page").src = "./homepage.html";
 
