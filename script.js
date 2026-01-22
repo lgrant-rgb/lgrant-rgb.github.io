@@ -1,10 +1,9 @@
 const tabs = ["homepage.html"];
-render(tabs[0]);
-//document.getElementById("page").src = "./homepage.html";
+document.getElementById("page").src = render(tabs[0]);
 
 function render(page) {
   if (page.endsWith(".html")) {
-    document.getElementById("page").src = "./"+page;
+    return "./"+page;
   }
-  document.getElementById("page").src = "https://"+page;
+  return "https://"+page;
 }
